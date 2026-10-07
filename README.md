@@ -40,18 +40,14 @@ at `.output/public`. Connected to this repo with Workers Builds:
 - Deploy command: `npx wrangler deploy`
 - Production branch: `master`; `.node-version` pins Node
 
-Custom domains (Worker → Settings → Domains & Routes): `joshangell.co.uk` and
-`www.joshangell.co.uk`.
+Custom domains (Worker → Settings → Domains & Routes): `www.joshangell.co.uk`
+and `joshangell.co.uk`.
 
-### angell.io → joshangell.co.uk
+**www is the primary address.** `SITE_URL` in `shared/utils/site.ts` drives
+canonical tags, `og:url`, social images and the RSS feed. The bare domain 301s
+to www with a Redirect Rule in the joshangell.co.uk zone:
 
-angell.io doesn't serve the site. It 301s everything here, so links to it keep
-working. In the angell.io zone: **Rules → Redirect Rules → Create**:
-
-- When: all incoming requests
-- Then: dynamic redirect, expression
-  `concat("https://joshangell.co.uk", http.request.uri.path)`, status 301,
+- When: Hostname equals `joshangell.co.uk`
+- Then: dynamic redirect,
+  `concat("https://www.joshangell.co.uk", http.request.uri.path)`, status 301,
   preserve query string
-
-The zone needs a proxied (orange-cloud) DNS record for the rule to fire, e.g.
-`A @ 192.0.2.1` and `CNAME www @`.

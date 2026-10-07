@@ -19,7 +19,7 @@ useSeoMeta({
   ogTitle: post.value.title,
   ogDescription: post.value.description,
   ogType: 'article',
-  ogImage: 'https://joshangell.co.uk/scafell.jpg',
+  ogImage: `${SITE_URL}/scafell.jpg`,
   articlePublishedTime: date.value,
 })
 </script>

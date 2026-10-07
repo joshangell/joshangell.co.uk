@@ -17,7 +17,7 @@ useSeoMeta({
   title: 'Josh Angell',
   description: 'Writing by Josh Angell — web developer in North Wales, mostly about building things for the web.',
   ogTitle: 'Josh Angell',
-  ogImage: 'https://joshangell.co.uk/scafell.jpg',
+  ogImage: `${SITE_URL}/scafell.jpg`,
 })
 </script>
 

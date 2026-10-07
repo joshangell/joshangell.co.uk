@@ -1,6 +1,5 @@
 import { queryCollection } from '@nuxt/content/server'
 
-const SITE = 'https://joshangell.co.uk'
 
 const escape = (value: string) =>
   value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
@@ -12,8 +11,8 @@ export default defineEventHandler(async (event) => {
     .map(
       (post) => `    <item>
       <title>${escape(post.title)}</title>
-      <link>${SITE}${post.path}</link>
-      <guid>${SITE}${post.path}</guid>
+      <link>${SITE_URL}${post.path}</link>
+      <guid>${SITE_URL}${post.path}</guid>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
       <description>${escape(post.description)}</description>
     </item>`,
@@ -25,7 +24,7 @@ export default defineEventHandler(async (event) => {
 <rss version="2.0">
   <channel>
     <title>Josh Angell</title>
-    <link>${SITE}</link>
+    <link>${SITE_URL}</link>
     <description>Writing by Josh Angell</description>
     <language>en-gb</language>
 ${items}
