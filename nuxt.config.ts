@@ -41,6 +41,10 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    // Plain static files. Without this Nitro spots Cloudflare's build
+    // environment, switches to a Worker server build (and Content to D1), and
+    // writes a redirect config that makes wrangler ignore wrangler.jsonc
+    preset: 'static',
     prerender: {
       // writing/<slug>.html rather than writing/<slug>/index.html, so the
       // asset server answers /writing/<slug> directly with no slash redirect
