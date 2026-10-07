@@ -1,13 +1,13 @@
-/* Two machines: an amber CRT after dark, tractor-feed paper by day */
+/* Two machines: a pink-phosphor CRT after dark, tractor-feed paper by day */
 :root {
   --bg: #f3eddf;
   --bg-raised: #fbf7ee;
   --ink: #2b2620;
   --ink-soft: #6b6255;
-  --accent: #b5441b;
+  --accent: #be0485;
   --rule: #d9cfbb;
   --stripe: rgba(120, 160, 110, 0.09);
-  --selection: #ffd27a;
+  --selection: #ffc2ea;
   --glow: none;
   --scanlines: 0;
   color-scheme: light;
@@ -19,11 +19,11 @@
     --bg-raised: #1c1914;
     --ink: #eadfc8;
     --ink-soft: #9a8f7b;
-    --accent: #ffb000;
+    --accent: #fb48c4;
     --rule: #3a342a;
     --stripe: transparent;
-    --selection: #5a3f00;
-    --glow: 0 0 6px rgba(255, 176, 0, 0.45);
+    --selection: #5c1046;
+    --glow: 0 0 6px rgba(251, 72, 196, 0.45);
     --scanlines: 1;
     color-scheme: dark;
   }
@@ -34,11 +34,11 @@
   --bg-raised: #1c1914;
   --ink: #eadfc8;
   --ink-soft: #9a8f7b;
-  --accent: #ffb000;
+  --accent: #fb48c4;
   --rule: #3a342a;
   --stripe: transparent;
-  --selection: #5a3f00;
-  --glow: 0 0 6px rgba(255, 176, 0, 0.45);
+  --selection: #5c1046;
+  --glow: 0 0 6px rgba(251, 72, 196, 0.45);
   --scanlines: 1;
   color-scheme: dark;
 }
