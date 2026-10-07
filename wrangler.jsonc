@@ -1,0 +1,11 @@
+// Cloudflare Worker serving the static build; no Worker script, assets only
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "joshangell-co-uk",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./.output/public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

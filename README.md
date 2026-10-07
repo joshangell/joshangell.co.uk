@@ -31,15 +31,17 @@ pnpm build      # static site in .output/public
 Node 22.13+ (Nuxt Content uses the built-in `node:sqlite`, so there's no native
 module to compile).
 
-## Hosting (Cloudflare Pages, free plan)
+## Hosting (Cloudflare Workers, free plan)
 
-- Framework preset: none
+A Worker with static assets only, no Worker script; `wrangler.jsonc` points it
+at `.output/public`. Connected to this repo with Workers Builds:
+
 - Build command: `pnpm build`
-- Output directory: `.output/public`
-- `.node-version` pins Node 22
+- Deploy command: `npx wrangler deploy`
+- Production branch: `master`; `.node-version` pins Node
 
-Custom domains: `joshangell.co.uk` and `www.joshangell.co.uk` on the Pages
-project.
+Custom domains (Worker → Settings → Domains & Routes): `joshangell.co.uk` and
+`www.joshangell.co.uk`.
 
 ### angell.io → joshangell.co.uk
 

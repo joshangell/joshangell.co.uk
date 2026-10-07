@@ -42,6 +42,9 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
+      // writing/<slug>.html rather than writing/<slug>/index.html, so the
+      // asset server answers /writing/<slug> directly with no slash redirect
+      autoSubfolderIndex: false,
       crawlLinks: true,
       routes: ['/', '/feed.xml', '/404.html'],
     },
