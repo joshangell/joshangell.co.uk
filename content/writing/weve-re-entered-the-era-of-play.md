@@ -2,7 +2,6 @@
 title: We’ve re-entered the era of PLAY
 date: 2026-05-08
 description: That’s it. That’s the post.
-originallyPublished: https://angelljosh.substack.com/p/weve-re-entered-the-era-of-play
 ---
 
 That’s it. That’s the post.

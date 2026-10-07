@@ -8,7 +8,6 @@ export default defineContentConfig({
       schema: z.object({
         date: z.date(),
         description: z.string(),
-        originallyPublished: z.string().url().optional(),
       }),
     }),
   },

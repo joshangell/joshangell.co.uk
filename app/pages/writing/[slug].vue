@@ -45,9 +45,6 @@ useSeoMeta({
 
     <footer class="end muted">
       <p class="eof">[EOF]</p>
-      <p v-if="post.originallyPublished">
-        Originally published on <a :href="post.originallyPublished">Substack</a>.
-      </p>
       <p><NuxtLink to="/">← back to all writing</NuxtLink></p>
     </footer>
   </article>

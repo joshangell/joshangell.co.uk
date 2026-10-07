@@ -12,7 +12,6 @@ Add a Markdown file to `content/writing/`. The filename is the URL slug.
 title: The title
 date: 2026-10-07
 description: One line for the listing, RSS and social cards.
-originallyPublished: https://… # optional, shows a "originally published" link
 ---
 
 The post.
