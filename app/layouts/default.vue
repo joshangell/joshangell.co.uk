@@ -27,7 +27,7 @@ const isHome = computed(() => route.path === '/')
     <footer class="wrap footer muted">
       <p>
         <span aria-hidden="true">--</span> © {{ new Date().getFullYear() }} Josh Angell, North Wales.
-        Hand-built with Nuxt and a lot of play. Best viewed at 800×600.
+        Built with ❤️ by robots. Best viewed at 800×600.
       </p>
     </footer>
   </div>
